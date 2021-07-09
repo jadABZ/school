@@ -23,4 +23,15 @@ public class Student extends SchoolMember
     {
         return this.section;
     }
+    
+    @Override
+    public void printInfo()
+    {
+        System.out.println("Name: " + getName());
+        System.out.println("Phone: " + getPhone());
+        System.out.println("Email: " + getEmail());
+        System.out.println("Status: Student");
+        System.out.println("Class: " + className);
+        System.out.println("Section: " + section);
+    }
 }
