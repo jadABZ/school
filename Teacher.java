@@ -25,4 +25,15 @@ public class Teacher extends SchoolMember
         return this.salary;
     }
     
+    @Override
+    public void printInfo()
+    {
+        System.out.println("Name: " + getName());
+        System.out.println("Phone: " + getPhone());
+        System.out.println("Email: " + getEmail());
+        System.out.println("Status: Teacher");
+        System.out.println("Salary: " + salary + "$");
+        System.out.println("Hiring Date: " + hiringDate);
+    }
+    
 }
