@@ -25,24 +25,12 @@ public class Database
         {
             if(phone.equals(m.getPhone()))
             {
-                ViewSchoolMembers.viewMember(m.getName(), m.getPhone(), m.getEmail());
-                
-                if(m instanceof Student)
-                {
-                    Student s = (Student) m;
-                    ViewSchoolMembers.viewStudent(s.getClassName(), s.getSection());
-                }
-                
-                if(m instanceof Teacher)
-                {
-                    Teacher t = (Teacher) m;
-                    ViewSchoolMembers.viewTeacher(t.getSalary(), t.getHiringDate());
-                }
-                
+                m.printInfo();
                 return;
-            }    
+            } 
         }
         
         System.out.println("Phone number does not belong to any existing member");
     }
 }
+
