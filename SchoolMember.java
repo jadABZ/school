@@ -33,4 +33,11 @@ public class SchoolMember
     {
         return this.email;
     }
+    
+    public void printInfo()
+    {
+        System.out.println("Name: " + name);
+        System.out.println("Phone: " + phone);
+        System.out.println("Email: " + email);
+    }
 }
