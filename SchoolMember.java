@@ -1,6 +1,6 @@
 package com.mycompany.school;
 
-public class SchoolMember 
+public abstract class SchoolMember 
 {
     private String name, email, phone;
     
@@ -34,10 +34,5 @@ public class SchoolMember
         return this.email;
     }
     
-    public void printInfo()
-    {
-        System.out.println("Name: " + name);
-        System.out.println("Phone: " + phone);
-        System.out.println("Email: " + email);
-    }
+    public abstract void printInfo();
 }
